@@ -108,27 +108,7 @@ class AboutScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Row(
-                        children: [
-                          Icon(
-                            Icons.email,
-                            color: Colors.white,
-                            size: MediaQuery.of(context).size.aspectRatio * 20,
-                          ),
-                          const SizedBox(
-                            width: 15,
-                          ),
-                          SelectableText(
-                            'lucas.goncalves35@aluno.unip.br',
-                            style: Theme.of(context)
-                                .textTheme
-                                .headline6
-                                .copyWith(
-                                    color: Colors.white, fontSize: 26.ssp),
-                            textAlign: TextAlign.start,
-                          ),
-                        ],
-                      )
+
                     ],
                   ),
                 ),

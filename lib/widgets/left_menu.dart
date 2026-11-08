@@ -105,7 +105,7 @@ class _LeftMenuState extends State<LeftMenu> {
                     child: InkWell(
                       onTap: () async {
                         await launch(
-                            'https://www.linkedin.com/in/lucassgon%C3%A7alves/');
+                            'https://www.linkedin.com/in/lucasgo/');
                       },
                       child: Icon(
                         FontAwesomeIcons.linkedin,
@@ -127,33 +127,7 @@ class _LeftMenuState extends State<LeftMenu> {
                       ),
                     ),
                   ),
-                  Tooltip(
-                    message: 'Curriculo',
-                    child: InkWell(
-                      onTap: () async {
-                        await launch(
-                            'https://drive.google.com/drive/folders/1zdxe0cn_rP8UebGqyTpWqVsAcadwcdNZ?usp=sharing');
-                      },
-                      child: Icon(
-                        FontAwesomeIcons.solidFileWord,
-                        color: Colors.white,
-                        size: MediaQuery.of(context).size.aspectRatio * 20,
-                      ),
-                    ),
-                  ),
-                  /* IconButton(
-                    padding: EdgeInsets.all(0),
-                    tooltip: 'Curriculo',
-                    icon: Icon(
-                      FontAwesomeIcons.solidFileWord,
-                      size: ScreenUtil().radius(30),
-                    ),
-                    color: Colors.white,
-                    onPressed: () async {
-                      await launch(
-                          'https://drive.google.com/file/d/1dO_AGGrYSwyF2Uf2EBRyqt5dyGsb72Pq/view');
-                    },
-                  ),*/
+
                 ],
               ),
             ),

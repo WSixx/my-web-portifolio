@@ -50,6 +50,33 @@ class _SmallScreenHomeState extends State<SmallScreenHome> {
                 ),
               ),
             ),
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              decoration: BoxDecoration(
+                color: Colors.red.withOpacity(0.2),
+                borderRadius: BorderRadius.circular(8),
+                border: Border.all(color: Colors.redAccent, width: 1.5),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.warning_amber_rounded, color: Colors.amber, size: 24),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: Text(
+                      'ESTE PORTFÓLIO ENCONTRA-SE DESATIVADO',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             SizedBox(
               height: 20,
             ),
@@ -85,7 +112,7 @@ class _SmallScreenHomeState extends State<SmallScreenHome> {
                   child: InkWell(
                     onTap: () async {
                       await launch(
-                          'https://www.linkedin.com/in/lucassgon%C3%A7alves/');
+                          'https://www.linkedin.com/in/lucasgo/');
                     },
                     child: Icon(
                       FontAwesomeIcons.linkedin,
@@ -107,23 +134,7 @@ class _SmallScreenHomeState extends State<SmallScreenHome> {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: Tooltip(
-                    message: 'Curriculo',
-                    child: InkWell(
-                      onTap: () async {
-                        await launch(
-                            'https://drive.google.com/drive/folders/1zdxe0cn_rP8UebGqyTpWqVsAcadwcdNZ?usp=sharing');
-                      },
-                      child: Icon(
-                        FontAwesomeIcons.solidFileWord,
-                        color: Colors.white,
-                        size: MediaQuery.of(context).size.aspectRatio * 80,
-                      ),
-                    ),
-                  ),
-                ),
+
               ],
             ),
             SizedBox(
